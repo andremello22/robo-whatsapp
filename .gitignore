@@ -1,3 +1,5 @@
 ECHO est� ativado.
-daddos/
-venv/ 
+.gitignore
+.dados/
+.venv/ 
+.env/
