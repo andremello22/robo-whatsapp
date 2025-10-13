@@ -7,14 +7,14 @@ from decorators.executa_dia_util import executar_dia_util
 @executar_dia_util(dia=29)
 def enviar_mensagem(contato):
     try:   
-        # Abrir busca do WhatsApp (atalho CTRL+F)
+        
         pyautogui.click(212, 250)#clica na barra de pesquisa
         time.sleep(1)
         
         # Digitar nome do contato
         pyperclip.copy(contato["Nome"])
         pyautogui.hotkey("ctrl", "v")
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.press('enter')
         time.sleep(1)
         

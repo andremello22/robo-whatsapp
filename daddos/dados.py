@@ -18,6 +18,8 @@ def formata_planilha():
         return contatos
     except Exception as e:
         print(f"Erro ao formatar planilha: {e}")
+
+
    
 
 
