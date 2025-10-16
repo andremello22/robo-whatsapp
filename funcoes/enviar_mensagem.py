@@ -4,11 +4,11 @@ import pyautogui
 import pyperclip
 from decorators.executa_dia_util import executar_dia_util
 
-@executar_dia_util(dia=29)
+
 def enviar_mensagem(contato):
     try:   
         
-        pyautogui.click(212, 250)#clica na barra de pesquisa
+        pyautogui.click(496, 260)#clica na barra de pesquisa
         time.sleep(1)
         
         # Digitar nome do contato
@@ -19,7 +19,7 @@ def enviar_mensagem(contato):
         time.sleep(1)
         
         # Pressiona Enter para abrir a conversa
-        pyautogui.click(226, 488)
+        pyautogui.click(979, 971)
         time.sleep(1)
         
         # Digita a mensagem
