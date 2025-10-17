@@ -1,8 +1,16 @@
 from openpyxl import load_workbook
 import os
 
-def formata_planilha():
-    PATH = "C:\\Users\\supor\\Documents\\boot-mfprint\\daddos\\planilha\\contatos.xlsx"
+def formata_planilha(nome_arquivo='contatos'):
+    nome_arquivo.lower()
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    CAMINHO_PLANILHAS = os.path.join(BASE_DIR, 'planilha', f'{nome_arquivo}.xlsx')
+    CAMINHO_PLANILHAS = os.path.normpath(CAMINHO_PLANILHAS)
+
+    
+
+
+    PATH = CAMINHO_PLANILHAS
     # Abre a planilha
     wb = load_workbook(PATH)
     ws = wb.active
